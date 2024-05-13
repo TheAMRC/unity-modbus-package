@@ -1,0 +1,7 @@
+{
+    "name": "com.amrc.unitymodbus",
+    "version": "1.0.1",
+    "description": "Contains useful helper classes for ModBus communication within Unity. Developed for internal use at the AMRC",
+    "displayName": "Modbus for Unity",
+    "unity": "2022.3"
+}
