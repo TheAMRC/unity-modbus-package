@@ -1,0 +1,16 @@
+@startuml
+!include style.puml
+' Uncomment to force all arrows vertical and horizontal
+' skinparam linetype ortho
+
+' Uncomment to force all arrows diagonal, vertical and horizontal
+skinparam linetype polyline
+
+node A
+node "Really Wide Element" as B
+node C
+
+A -- B
+B -- C
+A -- C
+@enduml

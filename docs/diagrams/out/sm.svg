@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="589px" preserveAspectRatio="none" style="width:180px;height:589px;" version="1.1" viewBox="0 0 180 589" width="180px" zoomAndPan="magnify"><defs><filter height="300%" id="fl8jkmv5yyk0t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#003F82" filter="url(#fl8jkmv5yyk0t)" height="50" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="58" x="103.5" y="88"/><line style="stroke: #000000; stroke-width: 1.5;" x1="103.5" x2="161.5" y1="115.0146" y2="115.0146"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="113.5" y="107.0752">Login</text><rect fill="#003F82" filter="url(#fl8jkmv5yyk0t)" height="50" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="83" x="31" y="198"/><line style="stroke: #000000; stroke-width: 1.5;" x1="31" x2="114" y1="225.0146" y2="225.0146"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="41" y="217.0752">Overview</text><rect fill="#003F82" filter="url(#fl8jkmv5yyk0t)" height="50" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="57" x="44" y="418"/><line style="stroke: #000000; stroke-width: 1.5;" x1="44" x2="101" y1="445.0146" y2="445.0146"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="54" y="437.0752">Menu</text><rect fill="#003F82" filter="url(#fl8jkmv5yyk0t)" height="50" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="79" x="33" y="528"/><line style="stroke: #000000; stroke-width: 1.5;" x1="33" x2="112" y1="555.0146" y2="555.0146"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59" x="43" y="547.0752">Settings</text><rect fill="#003F82" filter="url(#fl8jkmv5yyk0t)" height="50" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="133" x="6" y="308"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="139" y1="335.0146" y2="335.0146"/><text fill="#FFFFFF" font-family="Verdana" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="113" x="16" y="327.0752">Building Sidebar</text><ellipse cx="132.5" cy="18" fill="#000000" filter="url(#fl8jkmv5yyk0t)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><!--link *start to Login--><path d="M132.5,28.167 C132.5,28.167 132.5,82.612 132.5,82.612 " fill="none" id="*start-&gt;Login" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="132.5,87.612,136.5,78.612,132.5,82.612,128.5,78.612,132.5,87.612" style="stroke: #000000; stroke-width: 1.0;"/><!--link Login to Overview--><path d="M108.75,138.236 C108.75,138.236 108.75,192.881 108.75,192.881 " fill="none" id="Login-&gt;Overview" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="108.75,197.881,112.75,188.881,108.75,192.881,104.75,188.881,108.75,197.881" style="stroke: #000000; stroke-width: 1.0;"/><!--link Overview to bs--><path d="M58.6667,248.236 C58.6667,248.236 58.6667,302.881 58.6667,302.881 " fill="none" id="Overview-&gt;bs" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="58.6667,307.881,62.6667,298.881,58.6667,302.881,54.6667,298.881,58.6667,307.881" style="stroke: #000000; stroke-width: 1.0;"/><!--link bs to Overview--><path d="M86.3333,307.764 C86.3333,307.764 86.3333,253.119 86.3333,253.119 " fill="none" id="bs-&gt;Overview" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="86.3333,248.119,82.3333,257.119,86.3333,253.119,90.3333,257.119,86.3333,248.119" style="stroke: #000000; stroke-width: 1.0;"/><!--link Overview to Menu--><path d="M114.258,223 C131.043,223 146.5,223 146.5,223 C146.5,223 146.5,435 146.5,435 C146.5,435 106.322,435 106.322,435 " fill="none" id="Overview-&gt;Menu" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="101.3222,435,110.3222,439,106.3222,435,110.3222,431,101.3222,435" style="stroke: #000000; stroke-width: 1.0;"/><!--link bs to Menu--><path d="M72.5,358.236 C72.5,358.236 72.5,412.881 72.5,412.881 " fill="none" id="bs-&gt;Menu" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="72.5,417.881,76.5,408.881,72.5,412.881,68.5,408.881,72.5,417.881" style="stroke: #000000; stroke-width: 1.0;"/><!--link Menu to Settings--><path d="M63,468.236 C63,468.236 63,522.8812 63,522.8812 " fill="none" id="Menu-&gt;Settings" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="63,527.8812,67,518.8812,63,522.8812,59,518.8812,63,527.8812" style="stroke: #000000; stroke-width: 1.0;"/><!--link Settings to Menu--><path d="M82,527.7638 C82,527.7638 82,473.119 82,473.119 " fill="none" id="Settings-&gt;Menu" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="82,468.119,78,477.119,82,473.119,86,477.119,82,468.119" style="stroke: #000000; stroke-width: 1.0;"/><!--link Menu to Login--><path d="M101.0047,452 C124.507,452 154,452 154,452 C154,452 154,143.203 154,143.203 " fill="none" id="Menu-&gt;Login" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="154,138.203,150,147.203,154,143.203,158,147.203,154,138.203" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml UIStateMachine
+
+skinparam linetype ortho
+
+
+
+hide <<light_variant>> stereotype
+hide <<dark_variant>> stereotype
+
+
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor white
+skinparam stereotypeCBackgroundColor f2f2f2
+
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 14
+  fontName "Verdana"
+  fontColor white
+}
+
+skinparam class {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+    arrowColor black
+  arrowFontName "Verdana"
+  arrowFontColor black
+  arrowFontSize 14
+
+  attributeFontColor black
+  attributeFontSize 14
+  attributeIconSize 14
+}
+
+skinparam StereotypeCBackgroundColor f2f2f2
+skinparam ClassHeaderBackgroundColor 003f82
+skinparam ClassBackgroundColor f2f2f2
+skinparam ClassBorderColor black
+skinparam ClassStereotypeFontColor white
+
+
+skinparam sequence {
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+    arrowColor black
+  arrowFontName "Verdana"
+  arrowFontColor black
+  arrowFontSize 14
+
+  lifeLineBorderColor black
+  lifeLineBackgroundColor f2f2f2
+  
+}
+
+
+skinparam actor {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam agent {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam artifact {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+  
+}
+skinparam boundary {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam card {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam cloud {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam collections {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam component {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam control {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam database {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam entity {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam file {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam folder {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam frame {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam interface {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam node {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam package {
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam partition{
+    backgroundColor f2f2f2
+  <<dark_variant>>backgroundColor 003f82
+  borderColor black
+    fontColor black
+  <<dark_variant>>fontColor white
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor black
+  <<dark_variant>>stereotypeFontColor white
+  stereotypeFontSize 14
+}
+skinparam participant {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam queue {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam stack {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam rectangle {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam storage {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+skinparam usecase {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+}
+
+
+skinparam activity {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+    arrowColor black
+  arrowFontName "Verdana"
+  arrowFontColor black
+  arrowFontSize 14
+}
+
+skinparam {
+  ActivityDiamondBackgroundColor 003f82
+  ActivityDiamondBorderColor black
+  ActivityDiamondFontColor white
+  ActivityDiamondFontName "Verdana"
+  ActivityDiamondFontSize 14
+}
+
+
+skinparam state {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+    arrowColor black
+  arrowFontName "Verdana"
+  arrowFontColor black
+  arrowFontSize 14
+}
+skinparam StateAttributeFontColor white
+
+
+
+skinparam object {
+    backgroundColor 003f82
+  <<light_variant>>backgroundColor f2f2f2
+  borderColor black
+    fontColor white
+  <<light_variant>>fontColor black
+  fontName "Verdana"
+  fontSize 14
+  stereotypeFontColor white
+  <<light_variant>>stereotypeFontColor black
+  stereotypeFontSize 14
+    arrowColor black
+  arrowFontName "Verdana"
+  arrowFontColor black
+  arrowFontSize 14
+
+  attributeFontColor white
+  attributeFontSize 14
+  attributeIconSize 14
+}
+skinparam note {
+  borderColor black
+}
+
+state Login
+state Overview
+state Menu
+state Settings
+state "Building Sidebar" as bs
+
+[*] - -> Login
+Login - -> Overview
+Overview - -> bs
+bs - -> Overview
+
+Overview - -> Menu
+bs - -> Menu
+
+
+Menu - -> Settings
+Settings - -> Menu
+Menu - -> Login
+
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 17:19:51 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13+33
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>
