@@ -1,8 +1,10 @@
-# PROJECT CODE NUMBER - PROJECT NAME
+# IMG General - Modbus Package for Unity
 
-*Brief description of the project in a sentence or two.*
+A tool to simplify managing modbus connections in Unity and extends the functionality of [NModbus](https://github.com/NModbus/NModbus) (provided in the package as a plugin). Provides several helpful classes:
 
-*Include a graphic for an overview of the project to help understand what the application is if possible. This should be broad concept only and not any specific details. GIF is best if possible.*
+* ModbusConnection.cs - Holds a modbus connection to a device over TCP
+* PollRegister.cs - Polls a register continuously and triggers an event when the register changes value.
+* RegisterUtils.cs - Helpful util functions for working with bit registers.
 
 ## Getting Started
 
@@ -10,43 +12,27 @@
 
 *What needs to be installed on your system before you install this repo. E.g.*
 
-* [Unity 2018.3](https://unity3d.com/) - The engine and build framework used
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) - Code editor or equivelant
+* [Unity](https://unity3d.com/) - The engine and build framework used
+* [Visual Studio](https://visualstudio.microsoft.com/) - Code editor or equivelant
 
 ### Installing
 
-*How should they install the application. E.g. download the trunk and launch within the UnityEditor.*
+#### Local Installation
 
-*Include an image/animated GIF of what success looks like.*
+1. Clone this repository to your local machine.
+2. Follow the steps outlined in [Install a UPM package from a local folder](https://docs.unity3d.com/Manual/upm-ui-local.html)
 
-### Development
-
-*Describe what the development process is overall, for example running `npm run dev` and then seeing it live in the browser.*
-
-### Building
-
-*Describe how to build the application and general settings. Any specific should be included in specific guides on the wiki / pages section. What is needed to build should be already be included in prerequisites.*
-
-### Running
-
-*Describe how to run the application/stack once now it is built.*
-
-*The Installing/Building/Running sections may combine in certain situations as they might overlap or be single lines of text in smaller projects.*
-
-### Testing
-
-No tests are implemented for this project.
+#### Git Installation
+1. Copy the link to the com.amrc.unitymodbus subfolder https://amrcgithub.shef.ac.uk/IMG/unity-modbus-package.git?path=/com.amrc.unitymodbus
+2. Follow the steps outlined in [Install a UPM package from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
 ## Deployment
 
-*Describe how you deploy the built application. Just an .exe that is run vs pointing to specific guides on the wiki / pages.*
-
-*Describe any files that are used to configure the application*
+The NModbus library used by this package should be supported on UWP devices (such as Hololens2) but this has yet to be tested.
 
 ## Contributing
 
-Please only contribute if assigned to work on the project.
-Development practice follows [GitHub flow](https://guides.github.com/introduction/flow/).
+Please feel free to contribute anything you'd like. Just get in touch with me and I'll add you as an editor.
 
 ### Coding Style
 
@@ -69,16 +55,11 @@ This project is using [SemVer](http://semver.org/) for versioning. For the versi
 
 ## Authors
 
-* **Joe Smith** - *PM* - [me1num](http://amrcgithub.shef.ac.uk/me1num)
-* **Laura Jones** - *Developer* - [me1num](http://amrcgithub.shef.ac.uk/me1num)
-
-See also the list of [contributors](http://amrcgithub.shef.ac.uk/IMG/LINK_TO_PROJECT/graphs/contributors) who participated in this project.
+* **Seth Roberts** - *Developer* - [me1seth](http://amrcgithub.shef.ac.uk/me1seth)
 
 ## License
 
-This project is funded under *name your project type*.
-
-*Also include any links to collaberation agreements for future staff members wanting to understand if they can use the codebase.*
+This project is funded under IMG General.
 
 ## Acknowledgments
 
