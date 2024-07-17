@@ -12,12 +12,8 @@ namespace ModBus.Utils
         /// </summary>
         /// <param name="register">The register to read</param>
         /// <param name="address">The address of the bit within the register</param>
-        /// <returns></returns>
-        public static bool ReadRegisterAtAddress(this ushort register, ushort address)
-        {
-            var value = register & (1 << address);
-            return Convert.ToBoolean(value);
-        }
+        /// <returns>A register bit represented as a boolean</returns>
+        public static bool ReadRegisterAtAddress(this ushort register, ushort address) => Convert.ToBoolean(register & (1 << address));
 
         /// <summary>
         /// Sets the bit of a register to 1 at a specific address

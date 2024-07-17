@@ -25,20 +25,16 @@ namespace ModBus
         {
             try
             {
-                var factory = new ModbusFactory();
-                _tcpClient.BeginConnect(remoteIpAddress, port, null, null);
-                _master = factory.CreateMaster(_tcpClient);
+                _master = SetupConnection();
             }
             catch (Exception ex)
             {
-                Debug.Log(ex);
+                Debug.LogError("Couldn't connect to the remote address " + remoteIpAddress + '\n'
+                    + ex.Message);
             }
         }
 
-        private void OnDisable()
-        {
-            _tcpClient.Close();
-        }
+        private void OnDisable() => _tcpClient.Close();
 
         /// <summary>
         /// Read a ModBus register at a given address
@@ -51,7 +47,12 @@ namespace ModBus
             {
                 return await _master.ReadInputRegistersAsync(1, address, 1);
             }
-            catch { return null; }
+            catch (Exception e)
+            {
+                Debug.LogError("Couldn't read register " + address + " of device at " + remoteIpAddress + '\n'
+                    + e.Message);
+                return null;
+            }
         }
 
         /// <summary>
@@ -65,10 +66,18 @@ namespace ModBus
             {
                 await _master.WriteSingleRegisterAsync(1, address, value);
             }
-            catch
+            catch(Exception e)
             {
-                // ignored
+                Debug.LogError("Couldn't write " + value + " to " + address + '\n'
+                    + e.Message);
             }
+        }
+        
+        private IModbusMaster SetupConnection()
+        {
+            var factory = new ModbusFactory();
+            _tcpClient.BeginConnect(remoteIpAddress, port, null, null);
+            return factory.CreateMaster(_tcpClient);
         }
     }
 }

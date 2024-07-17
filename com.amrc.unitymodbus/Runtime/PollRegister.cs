@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,29 +21,29 @@ namespace ModBus
         [Tooltip("Events to call upon the register changing value")]
         [SerializeField] private UnityEvent<ushort> registerChanged;
 
-        private ushort _previousRegisterValue;
+        private ushort _previousRegisterValue = ushort.MaxValue; // Zero is a possible value so use something else
 
-        private void Start()
-        {
-            StartCoroutine(PollRoutine());
-        }
+        private void Start() => StartCoroutine(PollRoutine());
+
+        private void OnDisable() => StopAllCoroutines();
 
         private IEnumerator PollRoutine()
         {
             while (true)
             {
-                var task = ReadStatus();
+                var task = connection.ReadRegister(registerAddress);
                 yield return new WaitUntil(() => task.IsCompleted);
+                
+                var registerValues = task.Result;
+                HandleRegister(registerValues);
             }
         }
 
-        private async Task ReadStatus()
+        private void HandleRegister(IReadOnlyList<ushort> registerValues)
         {
-            var registerValues = await connection.ReadRegister(registerAddress);
-
             if (registerValues == null) return;
 
-	        var status = registerValues[0];
+            var status = registerValues[0];
             if (status == _previousRegisterValue) return;
 
             _previousRegisterValue = status;
