@@ -1,9 +1,7 @@
 {
-    "name": "com.amrc.unitymodbus",
+    "name": "uk.co.amrc.unitymodbus",
     "rootNamespace": "",
-    "references": [
-        ""
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
