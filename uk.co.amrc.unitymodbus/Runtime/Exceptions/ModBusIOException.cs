@@ -1,6 +1,6 @@
 using System;
 
-namespace ModBus.Exceptions
+namespace UnityModBus.Exceptions
 {
     public class ModBusIOException : Exception
     {

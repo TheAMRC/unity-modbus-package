@@ -1,17 +1,24 @@
-using ModBus.Exceptions;
+using UnityModBus.Exceptions;
 using NModbus;
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace ModBus.Classes
+namespace UnityModBus.Classes
 {
     /// <summary>
     /// A class representing a connection to a device over ModBus TCP
     /// </summary>
     public class ModBusConnection
     {
+        /// <summary>
+        /// Called upon a successful connection to a modbus device
+        /// </summary>
         public Action onConnect;
+
+        /// <summary>
+        /// Called whenever an active connection is dropped
+        /// </summary>
         public Action onDisconnect;
 
         private const int CONNECTION_TIMEOUT_MS = 1000;
@@ -22,7 +29,11 @@ namespace ModBus.Classes
         private readonly TcpClient _tcpClient = new();
         private IModbusMaster _master;
 
-
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="remoteIpAddress">IP address of modbus device to connect to over TCP</param>
+        /// <param name="port">Open modbus port on remote device</param>
         public ModBusConnection(string remoteIpAddress, ushort port)
         {
             _remoteIpAddress = remoteIpAddress;

@@ -1,9 +1,10 @@
-using ModBus.Classes;
+using UnityModBus.Classes;
+using PlasticPipe.PlasticProtocol.Messages;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ModBus.UnityComponents
+namespace UnityModBus.UnityComponents
 {
     /// <summary>
     /// A GameObject representing a connection to a device over ModBus TCP
@@ -41,6 +42,12 @@ namespace ModBus.UnityComponents
 
         private void OnDisable() {
             CloseConnection();
+        }
+
+        private void Update()
+        {
+            if (!IsConnected) return;
+            _connection?.Tick();
         }
 
         private void TryOpenConnection()
@@ -87,22 +94,26 @@ namespace ModBus.UnityComponents
         {
             if (_connection == null) return;
 
-            _connection.onConnect += () => onConnect?.Invoke();
-            _connection.onDisconnect += () => onDisconnect?.Invoke();
+            _connection.onConnect += OnConnectHandler;
+            _connection.onDisconnect += OnDisconnectHandler;
         }
 
         private void RemoveEvents()
         {
             if (_connection == null) return;
 
-            _connection.onConnect -= () => onConnect?.Invoke();
-            _connection.onDisconnect -= () => onDisconnect?.Invoke();
+            _connection.onConnect -= OnConnectHandler;
+            _connection.onDisconnect -= OnDisconnectHandler;
         }
 
-        private void Update()
+        private void OnConnectHandler()
         {
-            if (!IsConnected) return;
-            _connection?.Tick();
+            _connection.onConnect?.Invoke();
+        }
+
+        private void OnDisconnectHandler()
+        {
+            _connection.onDisconnect?.Invoke();
         }
     }
 }

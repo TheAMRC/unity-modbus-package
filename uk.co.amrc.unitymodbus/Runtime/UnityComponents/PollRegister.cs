@@ -1,8 +1,8 @@
-using ModBus.Classes;
+using UnityModBus.Classes;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ModBus.UnityComponents
+namespace UnityModBus.UnityComponents
 {
     /// <summary>
     /// A Unity component class to repeatedly poll a register over ModBus and alert at any change
@@ -29,7 +29,7 @@ namespace ModBus.UnityComponents
             }
 
             _poll = new ModBusPoll(registerAddress, connectionInstance.Connection);
-            _poll.onRegisterChange += (registerValues) => registerChanged?.Invoke(registerValues);
+            _poll.onRegisterChange += RegisterChangeHandler;
             StartCoroutine(_poll.Poll());
         }
 
@@ -38,13 +38,13 @@ namespace ModBus.UnityComponents
             if (_poll == null) return;
 
             StopAllCoroutines();
-            _poll.onRegisterChange -= (registerValues) => registerChanged?.Invoke(registerValues);
+            _poll.onRegisterChange -= RegisterChangeHandler;
             _poll = null;
         }
 
-        private void ActivateRoutine()
+        private void RegisterChangeHandler(ushort[] registerValues)
         {
-
+            registerChanged?.Invoke(registerValues);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace ModBus.Classes
+namespace UnityModBus.Classes
 {
     /// <summary>
     /// Class to handle polling a register address over ModBus.
@@ -16,8 +16,8 @@ namespace ModBus.Classes
         /// </summary>
         public Action<ushort[]> onRegisterChange;
 
-        private ushort _registerAddress;
-        private ModBusConnection _connection;
+        private readonly ushort _registerAddress;
+        private readonly ModBusConnection _connection;
 
         private ushort[] _previousRegisterValues;
 
