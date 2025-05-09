@@ -1,6 +1,6 @@
-using UnityModBus.Classes;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityModBus.Classes;
 
 namespace UnityModBus.UnityComponents
 {

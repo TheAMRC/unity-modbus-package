@@ -1,8 +1,8 @@
-using UnityModBus.Exceptions;
 using NModbus;
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using UnityModBus.Exceptions;
 
 namespace UnityModBus.Classes
 {

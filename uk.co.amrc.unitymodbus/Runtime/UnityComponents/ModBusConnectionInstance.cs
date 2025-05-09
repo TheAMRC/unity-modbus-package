@@ -1,8 +1,7 @@
-using UnityModBus.Classes;
-using PlasticPipe.PlasticProtocol.Messages;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityModBus.Classes;
 
 namespace UnityModBus.UnityComponents
 {
