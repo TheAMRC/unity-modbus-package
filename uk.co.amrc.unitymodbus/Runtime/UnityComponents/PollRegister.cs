@@ -29,7 +29,7 @@ namespace UnityModBus.UnityComponents
             }
 
             _poll = new ModBusPoll(registerAddress, connectionInstance.Connection);
-            _poll.onRegisterChange += RegisterChangeHandler;
+            _poll.OnRegisterChange += RegisterChangeHandler;
             StartCoroutine(_poll.Poll());
         }
 
@@ -38,13 +38,10 @@ namespace UnityModBus.UnityComponents
             if (_poll == null) return;
 
             StopAllCoroutines();
-            _poll.onRegisterChange -= RegisterChangeHandler;
+            _poll.OnRegisterChange -= RegisterChangeHandler;
             _poll = null;
         }
 
-        private void RegisterChangeHandler(ushort[] registerValues)
-        {
-            registerChanged?.Invoke(registerValues);
-        }
+        private void RegisterChangeHandler(ushort[] registerValues) => registerChanged?.Invoke(registerValues);
     }
 }

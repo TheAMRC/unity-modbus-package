@@ -13,7 +13,7 @@ namespace UnityModBus.UnityComponents
         /// <summary>
         /// The ModBus connection object. Created using parameters set in the Inspector.
         /// </summary>
-        public ModBusConnection Connection { get => _connection; }
+        public ModBusConnection Connection { get; private set; }
 
         /// <summary>
         /// Whether the ModBus connection is currently operational.
@@ -32,21 +32,14 @@ namespace UnityModBus.UnityComponents
         [Tooltip("Event triggered upon the termination of a Modbus connection")]
         [SerializeField] private UnityEvent onDisconnect;
 
-        private ModBusConnection _connection;
+        private void OnEnable() => TryOpenConnection();
 
-        private void OnEnable()
-        {
-            TryOpenConnection();
-        }
-
-        private void OnDisable() {
-            CloseConnection();
-        }
+        private void OnDisable() => CloseConnection();
 
         private void Update()
         {
             if (!IsConnected) return;
-            _connection?.Tick();
+            Connection?.Tick();
         }
 
         private void TryOpenConnection()
@@ -63,56 +56,28 @@ namespace UnityModBus.UnityComponents
 
         private void OpenConnection()
         {
-            AddConnection();
-            AddEvents();
-            IsConnected = true;
+            Connection = new ModBusConnection(remoteIpAddress, port, OnConnectHandler, OnDisconnectHandler);
+            Connection.OpenModBusConnection();
         }
 
         private void CloseConnection()
         {
-            RemoveEvents();
-            RemoveConnection();
-            IsConnected = false;
+            if (Connection == null) return;
+
+            Connection.CloseModBusConnection();
+            Connection = null;
         }
-
-        private void AddConnection()
-        {
-            _connection = new ModBusConnection(remoteIpAddress, port);
-            _connection.OpenModBusConnection();
-        }
-
-        private void RemoveConnection()
-        {
-            if (_connection == null) return;
-
-            _connection.CloseModBusConnection();
-            _connection = null;
-        }
-
-        private void AddEvents()
-        {
-            if (_connection == null) return;
-
-            _connection.onConnect += OnConnectHandler;
-            _connection.onDisconnect += OnDisconnectHandler;
-        }
-
-        private void RemoveEvents()
-        {
-            if (_connection == null) return;
-
-            _connection.onConnect -= OnConnectHandler;
-            _connection.onDisconnect -= OnDisconnectHandler;
-        }
-
+        
         private void OnConnectHandler()
         {
-            _connection.onConnect?.Invoke();
+            IsConnected = true;
+            onConnect?.Invoke();
         }
 
         private void OnDisconnectHandler()
         {
-            _connection.onDisconnect?.Invoke();
+            IsConnected = false;
+            onDisconnect?.Invoke();
         }
     }
 }

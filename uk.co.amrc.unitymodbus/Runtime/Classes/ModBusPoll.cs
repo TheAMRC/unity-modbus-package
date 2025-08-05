@@ -14,7 +14,7 @@ namespace UnityModBus.Classes
         /// <summary>
         /// Called whenever the register specified in the constructor changes value.
         /// </summary>
-        public Action<ushort[]> onRegisterChange;
+        public Action<ushort[]> OnRegisterChange;
 
         private readonly ushort _registerAddress;
         private readonly ModBusConnection _connection;
@@ -39,10 +39,10 @@ namespace UnityModBus.Classes
         {
             while (true)
             {
-                Task<ushort[]> task = null;
+                Task<ushort[]> task;
                 try
                 {
-                    task = _connection.ReadRegister(_registerAddress);
+                    task = _connection.ReadInputRegister(_registerAddress);
                 }
                 catch (Exception ex)
                 {
@@ -66,17 +66,27 @@ namespace UnityModBus.Classes
 
                 HandleRegister(result);
             }
-
-            yield break;
         }
 
         private void HandleRegister(ushort[] registerValues)
         {
             if (registerValues == null) return;
+            
+            if (_previousRegisterValues == null)
+            {
+                CallChange(registerValues);
+                return;
+            }
+            
             if (registerValues.SequenceEqual(_previousRegisterValues)) return;
 
+            CallChange(registerValues);
+        }
+
+        private void CallChange(ushort[] registerValues)
+        {
             _previousRegisterValues = registerValues;
-            onRegisterChange?.Invoke(registerValues);
+            OnRegisterChange?.Invoke(registerValues);
         }
     }
 }
