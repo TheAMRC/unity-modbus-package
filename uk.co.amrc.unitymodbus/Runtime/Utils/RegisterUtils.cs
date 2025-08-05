@@ -1,6 +1,6 @@
 using System;
 
-namespace ModBus.Utils
+namespace UnityModBus.Utils
 {
     /// <summary>
     /// Useful functions when working with registers over ModBus
