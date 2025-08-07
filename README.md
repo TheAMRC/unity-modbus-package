@@ -30,7 +30,7 @@ A tool to simplify managing modbus connections in Unity and extends the function
 
 The NModbus library used by this package should be supported on UWP devices (such as Hololens2) but this has yet to be tested.
 
-### Coding Style
+## Coding Style
 
 Coding style adheres to AMRC coding practices.
 
