@@ -1,9 +1,9 @@
 using System;
+using AMRC.UnityModBus.Classes;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityModBus.Classes;
 
-namespace UnityModBus.UnityComponents
+namespace AMRC.UnityModBus.UnityComponents
 {
     /// <summary>
     /// A GameObject representing a connection to a device over ModBus TCP

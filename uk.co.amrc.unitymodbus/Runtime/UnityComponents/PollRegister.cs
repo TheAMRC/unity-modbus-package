@@ -1,8 +1,8 @@
+using AMRC.UnityModBus.Classes;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityModBus.Classes;
 
-namespace UnityModBus.UnityComponents
+namespace AMRC.UnityModBus.UnityComponents
 {
     /// <summary>
     /// A Unity component class to repeatedly poll a register over ModBus and alert at any change
