@@ -1,6 +1,6 @@
 using System;
 
-namespace UnityModBus.Exceptions
+namespace AMRC.UnityModBus.Exceptions
 {
     public class ModBusConnectException : Exception
     {

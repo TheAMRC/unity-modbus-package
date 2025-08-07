@@ -2,9 +2,9 @@ using NModbus;
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using UnityModBus.Exceptions;
+using AMRC.UnityModBus.Exceptions;
 
-namespace UnityModBus.Classes
+namespace AMRC.UnityModBus.Classes
 {
     /// <summary>
     /// A class representing a connection to a device over ModBus TCP
