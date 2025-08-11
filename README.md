@@ -1,19 +1,23 @@
-# IMG General - Modbus Package for Unity
+<br>
+<img src="docs/amrc-logo.jpg" alt="AMRC Logo" width="300" align="right"/>
+</br>
+
+# IMG - Modbus Package for Unity
 
 A tool to simplify managing modbus connections in Unity and extends the functionality of [NModbus](https://github.com/NModbus/NModbus) (provided in the package as a plugin). Provides several helpful classes:
 
-* ModbusConnection.cs - Holds a modbus connection to a device over TCP
-* PollRegister.cs - Polls a register continuously and triggers an event when the register changes value.
-* RegisterUtils.cs - Helpful util functions for working with bit registers.
+- ModbusConnection.cs - Holds a modbus connection to a device over TCP
+- PollRegister.cs - Polls a register continuously and triggers an event when the register changes value.
+- RegisterUtils.cs - Helpful util functions for working with bit registers.
 
 ## Getting Started
 
 ### Prerequisites
 
-*What needs to be installed on your system before you install this repo. E.g.*
+_What needs to be installed on your system before you install this repo. E.g._
 
-* [Unity](https://unity3d.com/) - The engine and build framework used
-* [Visual Studio](https://visualstudio.microsoft.com/) - Code editor or equivelant
+- [Unity](https://unity3d.com/) - The engine and build framework used
+- [Visual Studio](https://visualstudio.microsoft.com/) - Code editor or equivelant
 
 ### Installing
 
@@ -23,6 +27,7 @@ A tool to simplify managing modbus connections in Unity and extends the function
 2. Follow the steps outlined in [Install a UPM package from a local folder](https://docs.unity3d.com/Manual/upm-ui-local.html)
 
 #### Git Installation
+
 1. Copy the link to the com.amrc.unitymodbus subfolder https://amrcgithub.shef.ac.uk/IMG/unity-modbus-package.git?path=/com.amrc.unitymodbus
 2. Follow the steps outlined in [Install a UPM package from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
@@ -34,9 +39,9 @@ The NModbus library used by this package should be supported on UWP devices (suc
 
 Coding style adheres to AMRC coding practices.
 
-| Language | Standard |
-| -- | -- |
-| C# | [Microsoft .NET](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/) |
+| Language | Standard                                                                              |
+| -------- | ------------------------------------------------------------------------------------- |
+| C#       | [Microsoft .NET](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/) |
 
 ## Versioning
 
@@ -44,4 +49,4 @@ This project is using [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Seth Roberts** - *Developer* - me1seth
+- **Seth Roberts** - _Developer_
