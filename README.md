@@ -1,5 +1,5 @@
 <br>
-<img src="docs/amrc-logo.jpg" alt="AMRC Logo" width="300" align="right"/>
+<img src="docs/amrc-logo.jpg" alt="AMRC Logo" width="300"/>
 </br>
 
 # IMG - Modbus Package for Unity
