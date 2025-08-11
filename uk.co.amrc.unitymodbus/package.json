@@ -1,6 +1,6 @@
 {
   "name": "uk.co.amrc.unitymodbus",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Contains useful helper classes for ModBus communication within Unity",
   "displayName": "Modbus for Unity",
   "unity": "2022.3"
