@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) University of Sheffield AMRC 2025.
+ * See LICENSE file
+ */
+
 using NModbus;
 using System;
 using System.Net.Sockets;

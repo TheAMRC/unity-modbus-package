@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) University of Sheffield AMRC 2025.
+ * See LICENSE file
+ */
+
 using AMRC.UnityModBus.Classes;
 using UnityEngine;
 using UnityEngine.Events;

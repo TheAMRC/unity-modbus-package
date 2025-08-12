@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) University of Sheffield AMRC 2025.
+ * See LICENSE file
+ */
+
 using System;
 
 namespace AMRC.UnityModBus.Utils
