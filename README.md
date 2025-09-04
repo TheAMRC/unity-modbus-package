@@ -1,4 +1,4 @@
-<img src="docs/amrc-logo.jpg" alt="AMRC Logo" width="300"/>
+<img src="docs/amrc-logo.jpg" alt="AMRC Logo" width="300" href="https://www.amrc.co.uk/"/>
 
 # IMG - Modbus Package for Unity
 
